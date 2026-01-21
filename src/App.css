@@ -15,8 +15,15 @@ body {
   overflow-x: hidden;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  touch-action: manipulation;
 }
 
 #root,
@@ -36,7 +43,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.2rem 2rem;
+  padding: 1.2rem calc(1.2rem + env(safe-area-inset-right)) 1.2rem
+    calc(1.2rem + env(safe-area-inset-left));
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
  border-radius: 0;
   backdrop-filter: blur(16px);
