@@ -8,25 +8,6 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
 }
 
-html,
-body,
-#root,
-.app-root,
-.app-main {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-html::-webkit-scrollbar,
-body::-webkit-scrollbar,
-#root::-webkit-scrollbar,
-.app-root::-webkit-scrollbar,
-.app-main::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-  display: none;
-}
-
 .app-header {
   position: sticky;
   top: 0;
