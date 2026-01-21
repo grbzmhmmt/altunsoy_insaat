@@ -12,7 +12,7 @@ function Navbar({ theme, onToggleTheme, menuOpen, onToggleMenu }) {
       <Link to="/" className="brand-link" aria-label="Ana sayfaya git">
         <div className="logo-title">
           <div className="brand-mark" aria-hidden="true">
-              <img src="/img/dashboard/logo.jpg" alt="" />
+              <img src="/img/dashboard/logo.png" alt="" />
           </div>
           <div>
             <h1>Altunsoy İnşaat</h1>
