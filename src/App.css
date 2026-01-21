@@ -8,8 +8,21 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
 }
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
+}
+
+#root,
+.app-root {
+  width: 100%;
+  max-width: 100%;
 }
 
 .app-header {
@@ -247,12 +260,27 @@ html.theme-light .side-menu-close {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+  border-radius: 999px;
+  min-width: 2.4rem;
+  min-height: 2.4rem;
 }
 
 
 .theme-icon {
   font-size: 1.5rem;
   line-height: 1;
+}
+
+html.theme-light .theme-toggle {
+  color: #111827;
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+html.theme-dark .theme-toggle {
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .menu-icon {
